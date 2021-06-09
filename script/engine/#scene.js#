@@ -1,0 +1,15 @@
+class Scene {
+    this.objects = [];
+    
+    constructor() {
+        
+    }
+
+    update() {
+
+    }
+    
+    draw() {
+
+    }
+}

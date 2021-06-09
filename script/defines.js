@@ -1,0 +1,3 @@
+const DEFAULT_FRAGMENT_SHADER = new Shader("simple.fs", gl.FRAGMENT_SHADER);
+const DEFAULT_VERTEX_SHADER = new Shader("simple.vs", gl.VERTEX_SHADER);
+const DEFAULT_PROGRAM = new Program(DEFAULT_VERTEX_SHADER, DEFAULT_FRAGMENT_SHADER);

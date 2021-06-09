@@ -1,12 +1,29 @@
+<!DOCTYPE html>
+
 <HTML>
   <HEAD>
     <TITLE>Gustav Nelson Schneider</TITLE>
-     <script src="./script/main.js"></script> 
+
   </HEAD>
 
   <BODY>
   <body>
     <canvas id="glCanvas" width="640" height="480"></canvas>
+    <script>
+      const canvas = document.querySelector("#glCanvas");
+      const gl = canvas.getContext("webgl2");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      gl.viewport(0, 0, canvas.width, canvas.height);
+    </script>
+    <script src="./script/shader.js"></script>
+    <script src="./script/program.js"></script>
+    <script src="./script/defines.js"></script>
+    <script src="./script/math.js"></script>
+    <script src="./script/texture.js"></script>
+    <script src="./script/rect.js"></script>
+    <script src="./script/texture_rect.js"></script>
+    <script src="./script/main.js"></script>
     <script>main()</script>
   </body>
   </BODY>
